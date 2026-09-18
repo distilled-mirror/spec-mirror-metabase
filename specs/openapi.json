@@ -10969,6 +10969,7 @@
         "type": "string",
         "enum": [
           "action",
+          "action-execute",
           "ad-hoc",
           "agent",
           "cache-refresh",
@@ -10982,6 +10983,7 @@
           "csv-download",
           "xlsx-download",
           "json-download",
+          "public-action-execute",
           "public-dashboard",
           "public-question",
           "public-csv-download",
