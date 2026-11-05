@@ -53060,14 +53060,7 @@
                 "type": "object",
                 "properties": {
                   "data_authority": {
-                    "oneOf": [
-                      {
-                        "$ref": "#/components/schemas/metabase.data-studio.api.table.data-authorities"
-                      },
-                      {
-                        "type": "null"
-                      }
-                    ]
+                    "$ref": "#/components/schemas/metabase.data-studio.api.table.data-authorities"
                   },
                   "data_layer": {
                     "oneOf": [
@@ -74099,20 +74092,13 @@
                     ]
                   },
                   "visibility_type": {
-                    "oneOf": [
-                      {
-                        "type": "string",
-                        "enum": [
-                          "retired",
-                          "sensitive",
-                          "normal",
-                          "hidden",
-                          "details-only"
-                        ]
-                      },
-                      {
-                        "type": "null"
-                      }
+                    "type": "string",
+                    "enum": [
+                      "retired",
+                      "sensitive",
+                      "normal",
+                      "hidden",
+                      "details-only"
                     ]
                   },
                   "coercion_strategy": {
@@ -74126,14 +74112,7 @@
                     ]
                   },
                   "json_unfolding": {
-                    "oneOf": [
-                      {
-                        "type": "boolean"
-                      },
-                      {
-                        "type": "null"
-                      }
-                    ]
+                    "type": "boolean"
                   },
                   "data_sensitivity": {
                     "oneOf": [
@@ -74168,39 +74147,11 @@
                     ]
                   },
                   "has_field_values": {
-                    "oneOf": [
-                      {
-                        "$ref": "#/components/schemas/metabase.lib.schema.metadata..column.has-field-values"
-                      },
-                      {
-                        "type": "null"
-                      }
-                    ]
+                    "$ref": "#/components/schemas/metabase.lib.schema.metadata..column.has-field-values"
                   },
                   "display_name": {
-                    "oneOf": [
-                      {
-                        "type": "string",
-                        "minLength": 1
-                      },
-                      {
-                        "type": "null"
-                      }
-                    ]
-                  },
-                  "nfc_path": {
-                    "oneOf": [
-                      {
-                        "type": "array",
-                        "items": {
-                          "type": "string",
-                          "minLength": 1
-                        }
-                      },
-                      {
-                        "type": "null"
-                      }
-                    ]
+                    "type": "string",
+                    "minLength": 1
                   },
                   "caveats": {
                     "oneOf": [
@@ -89975,14 +89926,7 @@
                     ]
                   },
                   "data_authority": {
-                    "oneOf": [
-                      {
-                        "$ref": "#/components/schemas/metabase.warehouse-schema-rest.api.table.data-authority-write"
-                      },
-                      {
-                        "type": "null"
-                      }
-                    ]
+                    "$ref": "#/components/schemas/metabase.warehouse-schema-rest.api.table.data-authority-write"
                   },
                   "data_layer": {
                     "oneOf": [
@@ -90308,14 +90252,7 @@
                     ]
                   },
                   "data_authority": {
-                    "oneOf": [
-                      {
-                        "$ref": "#/components/schemas/metabase.warehouse-schema-rest.api.table.data-authority-write"
-                      },
-                      {
-                        "type": "null"
-                      }
-                    ]
+                    "$ref": "#/components/schemas/metabase.warehouse-schema-rest.api.table.data-authority-write"
                   },
                   "data_layer": {
                     "oneOf": [
