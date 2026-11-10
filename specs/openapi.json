@@ -6582,20 +6582,20 @@
         "additionalProperties": false
       },
       "metabase-enterprise.transform-testing.schema.row": {
-        "description": "A row of inline test data, keyed by column name.",
+        "description": "A row of inline test data, keyed by column name, with `:string` first so request decoding keeps every cell as sent.",
         "type": "object",
         "additionalProperties": {
           "anyOf": [
             {
               "anyOf": [
                 {
+                  "type": "string"
+                },
+                {
                   "type": "boolean"
                 },
                 {
                   "type": "number"
-                },
-                {
-                  "type": "string"
                 }
               ]
             },
@@ -42587,6 +42587,9 @@
           "has_invited_second_user": {
             "type": "boolean"
           },
+          "has_used_password": {
+            "type": "boolean"
+          },
           "personal_collection_id": {
             "anyOf": [
               {
@@ -42636,6 +42639,7 @@
           "has_model",
           "can_write_any_collection",
           "sso_source",
+          "has_used_password",
           "locale",
           "tenant_id",
           "tenant_collection_id",
